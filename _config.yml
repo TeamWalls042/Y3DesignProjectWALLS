@@ -2,8 +2,8 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Year 3 Design Project WALL-S
-author: Mitansh Choksi
-logo: logo.png
+author: Team WALLS
+logo: logo.jpg
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -21,7 +21,7 @@ bibtex_bibfiles:
 
 # Information about where the book exists on the web
 repository:
-  url: https://github.com/mitanshc/Y3DesignProjectWALLS.git  # Online location of your book
+  url: https://github.com/TeamWalls042/Y3DesignProjectWALLS.git  # Online location of your book
   path_to_book: docs  # Optional path to your book, relative to the repository root
   branch: master  # Which branch of the repository should be used when creating links (optional)
 

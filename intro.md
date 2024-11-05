@@ -1,11 +1,14 @@
-# Welcome to the ditial project log
+# Welcome to Project Page of Team WALLS
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+The aim of the website is to track the actions and progress of our Year 3 Integrated Design Project. 
+Each team member has their own page(s) and we are slowly developing the website over the course of the upcoming months.
 
-Check out the content pages bundled with this sample book to see more.
+To reach us with any questions please email: teamwalls042@gmail.com
+
+We aim to reply as soon as possible. 
+
+## Project Details
+**Project Title:** Orbital Upcycling: Collecting and Transforming Space Debris into Valuable Space-Based Resources
 
 ```{tableofcontents}
 ```
