@@ -4,7 +4,7 @@
 format: jb-book
 root: intro
 chapters:
-- file: CollectionOfSpaceDebris
+#- file: CollectionOfSpaceDebris
 - file: IntroToTheProject
 #- file: markdown
 #- file: notebooks
