@@ -61,6 +61,18 @@
     <link rel="prev" title="Introduction to WALL-S" href="IntroToTheProject.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>  
+  <script>
+    var password = "yourpassword"; // Change this to your password
+    var input = prompt("Enter password to access this page:");
+    
+    // If the entered password doesn't match, deny access and stop rendering the page
+    if (input !== password) {
+      // Clears the entire page content and stops further rendering
+      document.body.innerHTML = ""; // Clears the body content
+      document.write("<h2 style='color:red; text-align:center;'>Access Denied</h2>");
+      document.close(); // Ensures no further rendering is done after this
+    }
+  </script>
 
   </head>
   
