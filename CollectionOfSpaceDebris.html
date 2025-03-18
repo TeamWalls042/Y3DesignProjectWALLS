@@ -9,38 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Collection of Space Debris &#8212; Year 3 Design Project WALL-S</title>
-    <script>
-      function checkPassword() {
-        var password = "yourpassword"; // Change this to your password
-        var userInput = document.getElementById("passwordInput").value;
-        
-        if (userInput === password) {
-          document.getElementById("authContainer").style.display = "none"; // Hide login
-          document.getElementById("content").style.display = "block"; // Show content
-        } else {
-          alert("Incorrect password. Try again.");
-        }
-      }
-    
-      // Hide entire page content initially
-      document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("content").style.display = "none";
-      });
-    </script>
-    
-    <!-- Password Input -->
-    <div id="authContainer" style="text-align:center; margin-top:20%;">
-      <h2>Enter Password</h2>
-      <input type="password" id="passwordInput" placeholder="Password">
-      <button onclick="checkPassword()">Submit</button>
-    </div>
-    
-    <!-- Protected Content -->
-    <div id="content" style="display:none;">
-      <h1>Welcome to the protected page!</h1>
-      <p>This content is only visible after entering the correct password.</p>
-    </div>
-  
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
@@ -98,7 +66,37 @@
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-  
+    <script>
+      function checkPassword() {
+        var password = "yourpassword"; // Change this to your password
+        var userInput = document.getElementById("passwordInput").value;
+        
+        if (userInput === password) {
+          document.getElementById("authContainer").style.display = "none"; // Hide login
+          document.getElementById("content").style.display = "block"; // Show content
+        } else {
+          alert("Incorrect password. Try again.");
+        }
+      }
+    
+      // Hide entire page content initially
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("content").style.display = "none";
+      });
+    </script>
+    
+    <!-- Password Input -->
+    <div id="authContainer" style="text-align:center; margin-top:20%;">
+      <h2>Enter Password</h2>
+      <input type="password" id="passwordInput" placeholder="Password">
+      <button onclick="checkPassword()">Submit</button>
+    </div>
+    
+    <!-- Protected Content -->
+    <div id="content" style="display:none;">
+      <h1>Welcome to the protected page!</h1>
+      <p>This content is only visible after entering the correct password.</p>
+    </div>
   
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
