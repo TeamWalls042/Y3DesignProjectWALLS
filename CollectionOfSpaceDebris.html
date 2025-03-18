@@ -11,30 +11,35 @@
     <title>Collection of Space Debris &#8212; Year 3 Design Project WALL-S</title>
     <script>
       function checkPassword() {
-        var password = "TestPass42!"; // Change this to your password
+        var password = "yourpassword"; // Change this to your password
         var userInput = document.getElementById("passwordInput").value;
         
-        if (userInput !== password) {
-          document.body.innerHTML = "<h2 style='color:red; text-align:center;'>Access Denied</h2>";
-        } else {
+        if (userInput === password) {
           document.getElementById("authContainer").style.display = "none"; // Hide login
           document.getElementById("content").style.display = "block"; // Show content
+        } else {
+          alert("Incorrect password. Try again.");
         }
       }
+    
+      // Hide entire page content initially
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("content").style.display = "none";
+      });
     </script>
     
+    <!-- Password Input -->
     <div id="authContainer" style="text-align:center; margin-top:20%;">
       <h2>Enter Password</h2>
       <input type="password" id="passwordInput" placeholder="Password">
       <button onclick="checkPassword()">Submit</button>
     </div>
     
+    <!-- Protected Content -->
     <div id="content" style="display:none;">
-      <!-- Your protected content goes here -->
       <h1>Welcome to the protected page!</h1>
       <p>This content is only visible after entering the correct password.</p>
-    </div>    
-  
+    </div>
   
   
   <script data-cfasync="false">
