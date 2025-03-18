@@ -9,7 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Collection of Space Debris &#8212; Year 3 Design Project WALL-S</title>
-    
+    <script>
+      var password = "yourpassword"; // Change this to your password
+      var input = prompt("Enter password to access this page:");
+      
+      // If the entered password doesn't match, deny access and stop rendering the page
+      if (input !== password) {
+        // Clears the entire page content and stops further rendering
+        document.body.innerHTML = ""; // Clears the body content
+        document.write("<h2 style='color:red; text-align:center;'>Access Denied</h2>");
+        document.close(); // Ensures no further rendering is done after this
+      }
+    </script>
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
@@ -61,18 +72,7 @@
     <link rel="prev" title="Introduction to WALL-S" href="IntroToTheProject.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>  
-  <script>
-    var password = "yourpassword"; // Change this to your password
-    var input = prompt("Enter password to access this page:");
-    
-    // If the entered password doesn't match, deny access and stop rendering the page
-    if (input !== password) {
-      // Clears the entire page content and stops further rendering
-      document.body.innerHTML = ""; // Clears the body content
-      document.write("<h2 style='color:red; text-align:center;'>Access Denied</h2>");
-      document.close(); // Ensures no further rendering is done after this
-    }
-  </script>
+  
 
   </head>
   
