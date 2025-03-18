@@ -10,12 +10,30 @@
 
     <title>Collection of Space Debris &#8212; Year 3 Design Project WALL-S</title>
     <script>
-      var password = "TestPass42!"; // Change this to your password
-      var input = prompt("Enter password to access this page:");
-      if (input !== password) {
-        document.body.innerHTML = "<h2>Access Denied</h2>";
+      function checkPassword() {
+        var password = "TestPass42!"; // Change this to your password
+        var userInput = document.getElementById("passwordInput").value;
+        
+        if (userInput !== password) {
+          document.body.innerHTML = "<h2 style='color:red; text-align:center;'>Access Denied</h2>";
+        } else {
+          document.getElementById("authContainer").style.display = "none"; // Hide login
+          document.getElementById("content").style.display = "block"; // Show content
+        }
       }
     </script>
+    
+    <div id="authContainer" style="text-align:center; margin-top:20%;">
+      <h2>Enter Password</h2>
+      <input type="password" id="passwordInput" placeholder="Password">
+      <button onclick="checkPassword()">Submit</button>
+    </div>
+    
+    <div id="content" style="display:none;">
+      <!-- Your protected content goes here -->
+      <h1>Welcome to the protected page!</h1>
+      <p>This content is only visible after entering the correct password.</p>
+    </div>    
   
   
   
