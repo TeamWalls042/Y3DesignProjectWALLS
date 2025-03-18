@@ -67,15 +67,17 @@
   
   <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
     <script>
-      var password = "yourpassword"; // Change this to your password
-      var input = prompt("Enter password to access this page:");
+    var password = "yourpassword"; // Change this to your password
+    var input = prompt("Enter password to access this page:");
     
-      if (input !== password) {
-        document.body.innerHTML = ""; // Clears the page content
-        document.write("<h2 style='color:red; text-align:center;'>Access Denied</h2>");
-        document.close(); // Ensures no further rendering
-      }
-    </script>
+    // Check if the entered password matches the stored password
+    if (input !== password) {
+      // Clear the page content and display "Access Denied" if the password is incorrect
+      document.body.innerHTML = ""; // Clears the page content
+      document.write("<h2 style='color:red; text-align:center;'>Access Denied</h2>");
+      document.close(); // Ensures no further rendering
+    }
+  </script>
   <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
